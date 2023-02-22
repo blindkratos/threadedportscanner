@@ -5,19 +5,19 @@ This port scanner uses command line arguments to check if a range of ports at a 
 
 Running python3 portScanner.py -h will display
 
-Usage: portScanner.py [-h] [-p PORTS] target
+      Usage: portScanner.py [-h] [-p PORTS] target
 
-A multi-threaded port scanner written in python
+      A multi-threaded port scanner written in python
 
-positional arguments:
-target                The target IP address to be scanned
+      positional arguments:
+      target The target IP address to be scanned
 
-options:
--h, --help            show this help message and exit
--p PORTS, --ports PORTS
-                        The range of ports to be scanned, separated by '-', or a
-                        list of ports separated by ','
-Example: portScanner.py 127.0.0.1 -p 1-1024
+      options:
+      -h, --help show this help message and exit
+
+      -p PORTS, --ports PORTS The range of ports to be scanned, separated by '-', or a list of ports separated by ','
+
+      Example: portScanner.py 127.0.0.1 -p 1-1024
 
 The multi-threading is handled by the python class concurrent.futures.ThreadPoolExecutor
 This module allocates threads automatically and, using the .map function, will run the port_scan function against a number of ports concurrently.
