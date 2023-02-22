@@ -35,7 +35,6 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--ports', help='The range of ports to be scanned, separated by \'-\', or a list of ports separated by \',\'')
     args = parser.parse_args() # command line arguments assigned and defined above
     target = args.target
-    ports = range(1025) # default port range to check
     if args.ports != None and '-' in args.ports: # if there is a dash in the ports value, change the port values to a list including all ports between minimum and maximum port values plus one
         [min_p, max_p] = [int(i) for i in args.ports.split('-')]
         ports = range(min_p, max_p + 1)
