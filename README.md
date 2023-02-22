@@ -4,13 +4,17 @@ My multi-threaded port scanner written in python
 This port scanner uses command line arguments to check if a range of ports at a given IP are open or closed.
 
 Running python3 portScanner.py -h will display
+
 Usage: portScanner.py [-h] [-p PORTS] target
+
 A multi-threaded port scanner written in python
+
 positional arguments:
-  target                The target IP address to be scanned
+target                The target IP address to be scanned
+
 options:
-  -h, --help            show this help message and exit
-  -p PORTS, --ports PORTS
+-h, --help            show this help message and exit
+-p PORTS, --ports PORTS
                         The range of ports to be scanned, separated by '-', or a
                         list of ports separated by ','
 Example: portScanner.py 127.0.0.1 -p 1-1024
@@ -25,7 +29,7 @@ If it is unsuccessful, it returns False and ignores that port. Because of this, 
 This program isn't meant as a replacement for rustscan, which I definitely recommend as the number one multi-threaded port scanner.
 It is purely written to demonstrate the authors ability to write a program capable of quickly scanning a network.
 
-TCredit to https://superfastpython.com/threadpoolexecutor-port-scanner/ for guidance on the use of ThreadPoolExecutor.
+Credit to https://superfastpython.com/threadpoolexecutor-port-scanner/ for guidance on the use of ThreadPoolExecutor.
 This guide helped me write my program, however my code allows command line arguments to be passed to the program making it more user friendly.
 
 DISCLAIMER: The author does not approve of the programs use in any way shape or form that breaks any laws or terms of service.
