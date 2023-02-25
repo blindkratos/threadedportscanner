@@ -42,6 +42,10 @@ if __name__ == '__main__':
         ports = range(min_p, max_p + 1)
     elif args.ports != None: # if the ports argument does not contain a dash, change port values to a list of defined port values separated by a comma
         ports = [int(i) for i in args.ports.split(',')]
+    
+    if len(ports) > 65535:
+        print('Too many ports!')
+        sys.exit()
         
     if args.threads == None:
         threads = len(ports)
