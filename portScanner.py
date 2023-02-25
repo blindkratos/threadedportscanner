@@ -45,6 +45,9 @@ if __name__ == '__main__':
         
     if args.threads == None:
         threads = len(ports)
+    elif args.threads > len(ports):
+        print('Too many threads for this scan!')
+        sys.exit()
     else:
         threads = args.threads
     
