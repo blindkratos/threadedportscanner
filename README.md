@@ -31,5 +31,6 @@ It is purely written to demonstrate the authors ability to write a program capab
 
 Credit to https://superfastpython.com/threadpoolexecutor-port-scanner/ for guidance on the use of ThreadPoolExecutor.
 This guide helped me write my program, however my code allows command line arguments to be passed to the program making it more user friendly.
+Credit also to the book Black Hat Python by Justin Seitz and Tim Arnold which I used as a resource for the code structure and some argparse examples.
 
 DISCLAIMER: The author does not approve of the programs use in any way shape or form that breaks any laws or terms of service.
